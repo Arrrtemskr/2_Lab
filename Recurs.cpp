@@ -155,7 +155,7 @@ void reverse(int pos)
 
 int main()
 {
-	
+	//Test commit
 
 	printf("Enter your rebus:");
 	gets_s(begin, 100);
