@@ -25,8 +25,7 @@ void enterAlph(char* mas, char* pos)
 {
 	for (int i = 0;i < 100;i++)
 	{
-		if (pos[i] == '\0')
-			break;
+		
 		for (int j = 0;j < 10;j++)
 		{
 			if (pos[i] == mas[j])
@@ -129,8 +128,9 @@ void reverse(int pos)
 	{
 		if (check())
 		{
-			print();
 			printf("time - %f", (clock() - start) / CLOCKS_PER_SEC);
+			printf("\n");
+			print();
 			
 			exit(0);
 		}
@@ -155,7 +155,6 @@ void reverse(int pos)
 
 int main()
 {
-	//Test commit
 
 	printf("Enter your rebus:");
 	gets_s(begin, 100);
